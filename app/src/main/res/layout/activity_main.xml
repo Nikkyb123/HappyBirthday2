@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/alfie2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitStart"
+            android:padding="@dimen/padding"
+            android:src="@drawable/birthday2" />
+
+
+        <TextView
+            android:layout_above="@+id/daddy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E53935"
+            android:text="@string/wonderful"
+            android:fontFamily="@font/geektastic"
+            android:textSize="40sp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/padding"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:id="@+id/daddy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E53935"
+            android:text="@string/love"
+            android:fontFamily="@font/geektastic"
+            android:textSize="40sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/padding"
+            android:paddingBottom="16dp"/>
+    </RelativeLayout>
